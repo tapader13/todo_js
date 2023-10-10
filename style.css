@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(233, 227, 221);
+    width: 70vw;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 10vh;
+    padding-block: 2rem;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.secO {
+    text-align: center;
+    margin-block: 15px;
+    background-color: rgb(241, 224, 213);
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+    padding: 1rem;
+    max-width: 650px;
+}
+
+.content .box {
+    /* text-align: center; */
+}
+
+textarea {
+    text-align: left;
+    border: none;
+    padding-inline: 1rem;
+    padding-block: .7rem;
+    outline: none;
+    font-size: 1.1rem;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: .5rem;
+    gap: 50px;
+
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+.output h4,
+p {
+    margin-block: .5rem;
+}
+
+h5 {
+    margin-block: 10px;
+    font-size: 1.2rem;
+}
+
+#save {
+    display: none;
+}
+
+button {
+    padding-block: .4rem;
+    padding-inline: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: rgb(100, 183, 100);
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: rgb(27, 97, 27);
+}
+
+input {
+    width: 216px;
+    border: none;
+    padding-inline: 1rem;
+    outline: none;
+    cursor: pointer;
+    padding-block: 5px;
+}
+
+@media(max-width:900px) {
+    .container {
+        width: 90vw;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:380px) {
+    .container {
+        width: 95vw;
+        padding-block: 1rem;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    textarea {
+        width: 90%;
+        margin: auto;
+
+    }
+
+
+}
